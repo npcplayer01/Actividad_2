@@ -44,6 +44,11 @@ namespace ISNP001724_Bloque2
             lblRegistro.Text = (posicion + 1) + " de " + dt.Rows.Count;
         }
 
+        private void habDeshBotones()
+        {
+
+            
+        }
         private void pbSiguiente_Click(object sender, EventArgs e)
         {
             if (posicion < dt.Rows.Count - 1)
@@ -90,6 +95,45 @@ namespace ISNP001724_Bloque2
             {
                 pbAtras.Enabled = false;
                 pbPrincipio.Enabled = false;
+            }
+        }
+
+        private void limpiarCajas()
+        {
+            txtTitulo.Text = "";
+            txtAutor.Text = "";
+            txtSinopsis.Text = "";
+            txtDuracion.Text = "";
+            txtClasificacion.Text = "";
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            if(btnNuevo.Text == "Nuevo")
+            {
+                btnNuevo.Text = "Guardar";
+                btnModificar.Text = "Cancelar";
+                limpiarCajas();
+                accion = "nuevo";
+            }
+            else {
+                btnNuevo.Text = "Nuevo";
+                btnModificar.Text = "Modificar";
+            }
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            if (btnModificar.Text == "Modificar")
+            {
+                btnModificar.Text = "Cancelar";
+                btnNuevo.Text = "Guardar";
+                accion = "modificar";
+            }
+            else
+            {
+                btnModificar.Text = "Modificar";
+                btnNuevo.Text = "Nuevo";
             }
         }
     }
