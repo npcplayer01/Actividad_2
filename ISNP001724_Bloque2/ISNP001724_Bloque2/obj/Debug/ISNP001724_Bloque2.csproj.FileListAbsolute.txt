@@ -1,0 +1,14 @@
+C:\Users\Oscar Alvarenga\Desktop\Actividad_2\ISNP001724_Bloque2\ISNP001724_Bloque2\bin\Debug\Database1.mdf
+C:\Users\Oscar Alvarenga\Desktop\Actividad_2\ISNP001724_Bloque2\ISNP001724_Bloque2\bin\Debug\Database1_log.ldf
+C:\Users\Oscar Alvarenga\Desktop\Actividad_2\ISNP001724_Bloque2\ISNP001724_Bloque2\bin\Debug\peliculas.mdf
+C:\Users\Oscar Alvarenga\Desktop\Actividad_2\ISNP001724_Bloque2\ISNP001724_Bloque2\bin\Debug\peliculas_log.ldf
+C:\Users\Oscar Alvarenga\Desktop\Actividad_2\ISNP001724_Bloque2\ISNP001724_Bloque2\bin\Debug\ISNP001724_Bloque2.exe.config
+C:\Users\Oscar Alvarenga\Desktop\Actividad_2\ISNP001724_Bloque2\ISNP001724_Bloque2\bin\Debug\ISNP001724_Bloque2.exe
+C:\Users\Oscar Alvarenga\Desktop\Actividad_2\ISNP001724_Bloque2\ISNP001724_Bloque2\bin\Debug\ISNP001724_Bloque2.pdb
+C:\Users\Oscar Alvarenga\Desktop\Actividad_2\ISNP001724_Bloque2\ISNP001724_Bloque2\obj\Debug\ISNP001724_Bloque2.csproj.AssemblyReference.cache
+C:\Users\Oscar Alvarenga\Desktop\Actividad_2\ISNP001724_Bloque2\ISNP001724_Bloque2\obj\Debug\ISNP001724_Bloque2.Properties.Resources.resources
+C:\Users\Oscar Alvarenga\Desktop\Actividad_2\ISNP001724_Bloque2\ISNP001724_Bloque2\obj\Debug\ISNP001724_Bloque2.csproj.GenerateResource.cache
+C:\Users\Oscar Alvarenga\Desktop\Actividad_2\ISNP001724_Bloque2\ISNP001724_Bloque2\obj\Debug\ISNP001724_Bloque2.csproj.CoreCompileInputs.cache
+C:\Users\Oscar Alvarenga\Desktop\Actividad_2\ISNP001724_Bloque2\ISNP001724_Bloque2\obj\Debug\ISNP001724_Bloque2.exe
+C:\Users\Oscar Alvarenga\Desktop\Actividad_2\ISNP001724_Bloque2\ISNP001724_Bloque2\obj\Debug\ISNP001724_Bloque2.pdb
+C:\Users\Oscar Alvarenga\Desktop\Actividad_2\ISNP001724_Bloque2\ISNP001724_Bloque2\obj\Debug\ISNP001724_Bloque2.Form1.resources

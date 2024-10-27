@@ -17,11 +17,14 @@ namespace ISNP001724_Bloque2
 
         public db_conexion()
         {
-            miConexion.ConnectionString = "@Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\peliculas.mdf;Integrated Security=True";
+            miConexion.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\peliculas.mdf;Integrated Security=True";
+            miConexion.Open();
         }
-        public DataSet obtenerDatos() { 
+        public DataSet obtenerDatos() {
+            ds.Clear();
             miComando.Connection = miConexion;
             miComando.CommandText = "SELECT * FROM peliculas";
+            miAdaptador.SelectCommand = miComando;
             miAdaptador.Fill(ds, "peliculas");
 
             return ds; }
