@@ -46,8 +46,28 @@ namespace ISNP001724_Bloque2
 
         private void habDeshBotones()
         {
+            if (posicion == 0)
+            {
+                pbPrincipio.Enabled = false;
+                pbAtras.Enabled = false;
+                pbSiguiente.Enabled = true;
+                pbFinal.Enabled = true;
+            }
+            else if (posicion >= dt.Rows.Count -1)
+            {
+                pbSiguiente.Enabled = false;
+                pbFinal.Enabled = false;
+                pbPrincipio.Enabled = true;
+                pbAtras.Enabled = true;
+            }
+            else
+            {
+                pbPrincipio.Enabled = true;
+                pbAtras.Enabled = true;
+                pbSiguiente.Enabled = true;
+                pbFinal.Enabled = true;
+            }
 
-            
         }
         private void pbSiguiente_Click(object sender, EventArgs e)
         {
@@ -55,8 +75,9 @@ namespace ISNP001724_Bloque2
             {
                 posicion += 1;
                 mostrarDatos();
-                pbSiguiente.Enabled = true;
-                pbFinal.Enabled = true;
+
+                pbAtras.Enabled = true;
+                pbPrincipio.Enabled = true;
             }
            else
            {
@@ -70,6 +91,7 @@ namespace ISNP001724_Bloque2
         {
             posicion = dt.Rows.Count - 1;
             mostrarDatos();
+
             pbAtras.Enabled = true;
             pbPrincipio.Enabled = true;
         }
@@ -78,6 +100,7 @@ namespace ISNP001724_Bloque2
         {
             posicion = 0;
             mostrarDatos();
+
             pbSiguiente.Enabled = true;
             pbFinal.Enabled = true;
         }
@@ -88,6 +111,7 @@ namespace ISNP001724_Bloque2
             {
                 posicion -= 1;
                 mostrarDatos();
+
                 pbAtras.Enabled = true;
                 pbPrincipio.Enabled = true;
             }
@@ -117,6 +141,30 @@ namespace ISNP001724_Bloque2
                 accion = "nuevo";
             }
             else {
+                String[] datos = {
+                    accion,
+                    dt.Rows[posicion].ItemArray[1].ToString(),
+                    txtTitulo.Text,
+                    txtAutor.Text,
+                    txtSinopsis.Text,
+                    txtDuracion.Text,
+                    txtClasificacion.Text
+                };
+
+                string respuesta = ObjConexion.administrarPeliculas(datos);
+                if (respuesta != "1")
+                {
+                    MessageBox.Show("Error: " + respuesta, "Eliminando datos de pelicula", MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+                else
+                {
+                    obtenerDatos();
+
+                }
+
+
+
                 btnNuevo.Text = "Nuevo";
                 btnModificar.Text = "Modificar";
             }
@@ -132,6 +180,7 @@ namespace ISNP001724_Bloque2
             }
             else
             {
+                mostrarDatos();
                 btnModificar.Text = "Modificar";
                 btnNuevo.Text = "Nuevo";
             }
