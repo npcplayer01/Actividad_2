@@ -155,12 +155,14 @@ namespace ISNP001724_Bloque2
                 string respuesta = ObjConexion.administrarPeliculas(datos);
                 if (respuesta != "1")
                 {
-                    MessageBox.Show("Error: " + respuesta, "Eliminando datos de pelicula", MessageBoxButtons.OK,
+                    MessageBox.Show("Error: " + respuesta, "Registrando datos de pelicula", MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
                 }
                 else
                 {
                     obtenerDatos();
+                    btnNuevo.Text = "Nuevo";
+                    btnModificar.Text = "Modificar";
 
                 }
 
