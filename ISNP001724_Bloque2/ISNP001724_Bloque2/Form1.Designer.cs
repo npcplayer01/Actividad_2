@@ -30,33 +30,33 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.grbDatos = new System.Windows.Forms.GroupBox();
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.txtTitulo = new System.Windows.Forms.TextBox();
-            this.txtAutor = new System.Windows.Forms.TextBox();
-            this.lblAutor = new System.Windows.Forms.Label();
-            this.txtSinopsis = new System.Windows.Forms.TextBox();
-            this.lblSinopsis = new System.Windows.Forms.Label();
-            this.txtDuracion = new System.Windows.Forms.TextBox();
-            this.lblDuracion = new System.Windows.Forms.Label();
             this.txtClasificacion = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.txtDuracion = new System.Windows.Forms.TextBox();
+            this.lblDuracion = new System.Windows.Forms.Label();
+            this.txtSinopsis = new System.Windows.Forms.TextBox();
+            this.lblSinopsis = new System.Windows.Forms.Label();
+            this.txtAutor = new System.Windows.Forms.TextBox();
+            this.lblAutor = new System.Windows.Forms.Label();
+            this.txtTitulo = new System.Windows.Forms.TextBox();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.grbNavegacion = new System.Windows.Forms.GroupBox();
-            this.grbEdicion = new System.Windows.Forms.GroupBox();
-            this.pbPrincipio = new System.Windows.Forms.PictureBox();
-            this.pbAtras = new System.Windows.Forms.PictureBox();
-            this.lblRegistro = new System.Windows.Forms.Label();
-            this.pbSiguiente = new System.Windows.Forms.PictureBox();
             this.pbFinal = new System.Windows.Forms.PictureBox();
-            this.btnNuevo = new System.Windows.Forms.Button();
-            this.btnModificar = new System.Windows.Forms.Button();
+            this.pbSiguiente = new System.Windows.Forms.PictureBox();
+            this.lblRegistro = new System.Windows.Forms.Label();
+            this.pbAtras = new System.Windows.Forms.PictureBox();
+            this.pbPrincipio = new System.Windows.Forms.PictureBox();
+            this.grbEdicion = new System.Windows.Forms.GroupBox();
             this.btnBorrar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.grbDatos.SuspendLayout();
             this.grbNavegacion.SuspendLayout();
-            this.grbEdicion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPrincipio)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAtras)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSiguiente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFinal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSiguiente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAtras)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPrincipio)).BeginInit();
+            this.grbEdicion.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbDatos
@@ -78,39 +78,39 @@
             this.grbDatos.TabStop = false;
             this.grbDatos.Text = "DATOS";
             // 
-            // lblTitulo
+            // txtClasificacion
             // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(25, 28);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(71, 29);
-            this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "Título";
+            this.txtClasificacion.Location = new System.Drawing.Point(572, 122);
+            this.txtClasificacion.Name = "txtClasificacion";
+            this.txtClasificacion.Size = new System.Drawing.Size(100, 20);
+            this.txtClasificacion.TabIndex = 11;
             // 
-            // txtTitulo
+            // label5
             // 
-            this.txtTitulo.Location = new System.Drawing.Point(102, 37);
-            this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(246, 20);
-            this.txtTitulo.TabIndex = 1;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(429, 113);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(137, 29);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Clasificación";
             // 
-            // txtAutor
+            // txtDuracion
             // 
-            this.txtAutor.Location = new System.Drawing.Point(102, 79);
-            this.txtAutor.Name = "txtAutor";
-            this.txtAutor.Size = new System.Drawing.Size(246, 20);
-            this.txtAutor.TabIndex = 3;
+            this.txtDuracion.Location = new System.Drawing.Point(538, 57);
+            this.txtDuracion.Name = "txtDuracion";
+            this.txtDuracion.Size = new System.Drawing.Size(134, 20);
+            this.txtDuracion.TabIndex = 7;
             // 
-            // lblAutor
+            // lblDuracion
             // 
-            this.lblAutor.AutoSize = true;
-            this.lblAutor.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAutor.Location = new System.Drawing.Point(25, 70);
-            this.lblAutor.Name = "lblAutor";
-            this.lblAutor.Size = new System.Drawing.Size(71, 29);
-            this.lblAutor.TabIndex = 2;
-            this.lblAutor.Text = "Autor";
+            this.lblDuracion.AutoSize = true;
+            this.lblDuracion.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDuracion.Location = new System.Drawing.Point(429, 48);
+            this.lblDuracion.Name = "lblDuracion";
+            this.lblDuracion.Size = new System.Drawing.Size(103, 29);
+            this.lblDuracion.TabIndex = 6;
+            this.lblDuracion.Text = "Duración";
             // 
             // txtSinopsis
             // 
@@ -130,39 +130,39 @@
             this.lblSinopsis.TabIndex = 4;
             this.lblSinopsis.Text = "Sinopsis";
             // 
-            // txtDuracion
+            // txtAutor
             // 
-            this.txtDuracion.Location = new System.Drawing.Point(538, 57);
-            this.txtDuracion.Name = "txtDuracion";
-            this.txtDuracion.Size = new System.Drawing.Size(134, 20);
-            this.txtDuracion.TabIndex = 7;
+            this.txtAutor.Location = new System.Drawing.Point(102, 79);
+            this.txtAutor.Name = "txtAutor";
+            this.txtAutor.Size = new System.Drawing.Size(246, 20);
+            this.txtAutor.TabIndex = 3;
             // 
-            // lblDuracion
+            // lblAutor
             // 
-            this.lblDuracion.AutoSize = true;
-            this.lblDuracion.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDuracion.Location = new System.Drawing.Point(429, 48);
-            this.lblDuracion.Name = "lblDuracion";
-            this.lblDuracion.Size = new System.Drawing.Size(103, 29);
-            this.lblDuracion.TabIndex = 6;
-            this.lblDuracion.Text = "Duración";
+            this.lblAutor.AutoSize = true;
+            this.lblAutor.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAutor.Location = new System.Drawing.Point(25, 70);
+            this.lblAutor.Name = "lblAutor";
+            this.lblAutor.Size = new System.Drawing.Size(71, 29);
+            this.lblAutor.TabIndex = 2;
+            this.lblAutor.Text = "Autor";
             // 
-            // txtClasificacion
+            // txtTitulo
             // 
-            this.txtClasificacion.Location = new System.Drawing.Point(572, 122);
-            this.txtClasificacion.Name = "txtClasificacion";
-            this.txtClasificacion.Size = new System.Drawing.Size(100, 20);
-            this.txtClasificacion.TabIndex = 11;
+            this.txtTitulo.Location = new System.Drawing.Point(102, 37);
+            this.txtTitulo.Name = "txtTitulo";
+            this.txtTitulo.Size = new System.Drawing.Size(246, 20);
+            this.txtTitulo.TabIndex = 1;
             // 
-            // label5
+            // lblTitulo
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(429, 113);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(137, 29);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Clasificación";
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(25, 28);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(71, 29);
+            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "Título";
             // 
             // grbNavegacion
             // 
@@ -178,6 +178,56 @@
             this.grbNavegacion.TabStop = false;
             this.grbNavegacion.Text = "NAVEGACION";
             // 
+            // pbFinal
+            // 
+            this.pbFinal.Image = ((System.Drawing.Image)(resources.GetObject("pbFinal.Image")));
+            this.pbFinal.Location = new System.Drawing.Point(271, 29);
+            this.pbFinal.Name = "pbFinal";
+            this.pbFinal.Size = new System.Drawing.Size(53, 50);
+            this.pbFinal.TabIndex = 11;
+            this.pbFinal.TabStop = false;
+            this.pbFinal.Click += new System.EventHandler(this.pbFinal_Click);
+            // 
+            // pbSiguiente
+            // 
+            this.pbSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("pbSiguiente.Image")));
+            this.pbSiguiente.Location = new System.Drawing.Point(211, 29);
+            this.pbSiguiente.Name = "pbSiguiente";
+            this.pbSiguiente.Size = new System.Drawing.Size(53, 50);
+            this.pbSiguiente.TabIndex = 10;
+            this.pbSiguiente.TabStop = false;
+            this.pbSiguiente.Click += new System.EventHandler(this.pbSiguiente_Click);
+            // 
+            // lblRegistro
+            // 
+            this.lblRegistro.AutoSize = true;
+            this.lblRegistro.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegistro.Location = new System.Drawing.Point(133, 38);
+            this.lblRegistro.Name = "lblRegistro";
+            this.lblRegistro.Size = new System.Drawing.Size(72, 29);
+            this.lblRegistro.TabIndex = 9;
+            this.lblRegistro.Text = "x de n";
+            // 
+            // pbAtras
+            // 
+            this.pbAtras.Image = ((System.Drawing.Image)(resources.GetObject("pbAtras.Image")));
+            this.pbAtras.Location = new System.Drawing.Point(72, 29);
+            this.pbAtras.Name = "pbAtras";
+            this.pbAtras.Size = new System.Drawing.Size(55, 50);
+            this.pbAtras.TabIndex = 1;
+            this.pbAtras.TabStop = false;
+            this.pbAtras.Click += new System.EventHandler(this.pbAtras_Click);
+            // 
+            // pbPrincipio
+            // 
+            this.pbPrincipio.Image = ((System.Drawing.Image)(resources.GetObject("pbPrincipio.Image")));
+            this.pbPrincipio.Location = new System.Drawing.Point(15, 29);
+            this.pbPrincipio.Name = "pbPrincipio";
+            this.pbPrincipio.Size = new System.Drawing.Size(50, 50);
+            this.pbPrincipio.TabIndex = 0;
+            this.pbPrincipio.TabStop = false;
+            this.pbPrincipio.Click += new System.EventHandler(this.pbPrincipio_Click);
+            // 
             // grbEdicion
             // 
             this.grbEdicion.Controls.Add(this.btnBorrar);
@@ -190,65 +240,15 @@
             this.grbEdicion.TabStop = false;
             this.grbEdicion.Text = "EDICION";
             // 
-            // pbPrincipio
+            // btnBorrar
             // 
-            this.pbPrincipio.Image = ((System.Drawing.Image)(resources.GetObject("pbPrincipio.Image")));
-            this.pbPrincipio.Location = new System.Drawing.Point(15, 29);
-            this.pbPrincipio.Name = "pbPrincipio";
-            this.pbPrincipio.Size = new System.Drawing.Size(50, 50);
-            this.pbPrincipio.TabIndex = 0;
-            this.pbPrincipio.TabStop = false;
-            this.pbPrincipio.Click += new System.EventHandler(this.pbPrincipio_Click);
-            // 
-            // pbAtras
-            // 
-            this.pbAtras.Image = ((System.Drawing.Image)(resources.GetObject("pbAtras.Image")));
-            this.pbAtras.Location = new System.Drawing.Point(72, 29);
-            this.pbAtras.Name = "pbAtras";
-            this.pbAtras.Size = new System.Drawing.Size(55, 50);
-            this.pbAtras.TabIndex = 1;
-            this.pbAtras.TabStop = false;
-            this.pbAtras.Click += new System.EventHandler(this.pbAtras_Click);
-            // 
-            // lblRegistro
-            // 
-            this.lblRegistro.AutoSize = true;
-            this.lblRegistro.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegistro.Location = new System.Drawing.Point(133, 38);
-            this.lblRegistro.Name = "lblRegistro";
-            this.lblRegistro.Size = new System.Drawing.Size(72, 29);
-            this.lblRegistro.TabIndex = 9;
-            this.lblRegistro.Text = "x de n";
-            // 
-            // pbSiguiente
-            // 
-            this.pbSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("pbSiguiente.Image")));
-            this.pbSiguiente.Location = new System.Drawing.Point(211, 29);
-            this.pbSiguiente.Name = "pbSiguiente";
-            this.pbSiguiente.Size = new System.Drawing.Size(53, 50);
-            this.pbSiguiente.TabIndex = 10;
-            this.pbSiguiente.TabStop = false;
-            this.pbSiguiente.Click += new System.EventHandler(this.pbSiguiente_Click);
-            // 
-            // pbFinal
-            // 
-            this.pbFinal.Image = ((System.Drawing.Image)(resources.GetObject("pbFinal.Image")));
-            this.pbFinal.Location = new System.Drawing.Point(271, 29);
-            this.pbFinal.Name = "pbFinal";
-            this.pbFinal.Size = new System.Drawing.Size(53, 50);
-            this.pbFinal.TabIndex = 11;
-            this.pbFinal.TabStop = false;
-            this.pbFinal.Click += new System.EventHandler(this.pbFinal_Click);
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Location = new System.Drawing.Point(30, 38);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(75, 23);
-            this.btnNuevo.TabIndex = 0;
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            this.btnBorrar.Location = new System.Drawing.Point(235, 38);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(75, 23);
+            this.btnBorrar.TabIndex = 2;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // btnModificar
             // 
@@ -260,14 +260,15 @@
             this.btnModificar.UseVisualStyleBackColor = true;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
-            // btnBorrar
+            // btnNuevo
             // 
-            this.btnBorrar.Location = new System.Drawing.Point(235, 38);
-            this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(75, 23);
-            this.btnBorrar.TabIndex = 2;
-            this.btnBorrar.Text = "Borrar";
-            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnNuevo.Location = new System.Drawing.Point(30, 38);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(75, 23);
+            this.btnNuevo.TabIndex = 0;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // Form1
             // 
@@ -285,11 +286,11 @@
             this.grbDatos.PerformLayout();
             this.grbNavegacion.ResumeLayout(false);
             this.grbNavegacion.PerformLayout();
-            this.grbEdicion.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbPrincipio)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAtras)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSiguiente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFinal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSiguiente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAtras)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPrincipio)).EndInit();
+            this.grbEdicion.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

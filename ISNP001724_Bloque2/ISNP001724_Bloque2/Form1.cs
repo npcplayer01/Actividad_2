@@ -16,7 +16,7 @@ namespace ISNP001724_Bloque2
         DataSet ds = new DataSet();
         DataTable dt = new DataTable();
         public int posicion = 0;
-        string accion = "nuevo";
+        string accion = "Nuevo";
 
         public Form1()
         {
@@ -30,8 +30,8 @@ namespace ISNP001724_Bloque2
         private void obtenerDatos()
         {
             ds = ObjConexion.obtenerDatos();
-            dt = ds.Tables["peliculas"];
-           dt.PrimaryKey = new DataColumn[] { dt.Columns["id"] };
+            dt = ds.Tables["Peliculas"];
+            dt.PrimaryKey = new DataColumn[] { dt.Columns["id"] };
             mostrarDatos();
         }
         private void mostrarDatos()
@@ -53,7 +53,7 @@ namespace ISNP001724_Bloque2
                 pbSiguiente.Enabled = true;
                 pbFinal.Enabled = true;
             }
-            else if (posicion >= dt.Rows.Count -1)
+            else if (posicion >= dt.Rows.Count - 1)
             {
                 pbSiguiente.Enabled = false;
                 pbFinal.Enabled = false;
@@ -79,9 +79,9 @@ namespace ISNP001724_Bloque2
                 pbAtras.Enabled = true;
                 pbPrincipio.Enabled = true;
             }
-           else
-           {
-              pbSiguiente.Enabled = false;
+            else
+            {
+                pbSiguiente.Enabled = false;
                 pbFinal.Enabled = false;
             }
 
@@ -133,14 +133,15 @@ namespace ISNP001724_Bloque2
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            if(btnNuevo.Text == "Nuevo")
+            if (btnNuevo.Text == "Nuevo")
             {
                 btnNuevo.Text = "Guardar";
                 btnModificar.Text = "Cancelar";
                 limpiarCajas();
-                accion = "nuevo";
+                accion = "Nuevo";
             }
-            else {
+            else
+            {
                 String[] datos = {
                     accion,
                     dt.Rows[posicion].ItemArray[1].ToString(),
@@ -176,13 +177,34 @@ namespace ISNP001724_Bloque2
             {
                 btnModificar.Text = "Cancelar";
                 btnNuevo.Text = "Guardar";
-                accion = "modificar";
+                accion = "Modificar";
             }
             else
             {
                 mostrarDatos();
                 btnModificar.Text = "Modificar";
                 btnNuevo.Text = "Nuevo";
+            }
+        }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Esta seguro de eliminar a: " + txtTitulo.Text, "Eliminando peliculas",
+               MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                String[] datos = {
+                    "Eliminar", dt.Rows[posicion].ItemArray[0].ToString(),
+                };
+                String response = ObjConexion.administrarPeliculas(datos);
+                if (response != "1")
+                {
+                    MessageBox.Show("Error: " + response, "Eliminando datos de pelicula", MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+                else
+                {
+                    obtenerDatos();
+                }
             }
         }
     }

@@ -32,7 +32,7 @@ namespace ISNP001724_Bloque2
      String sql = "";
             if (Peliculas[0] == "Nuevo")
             {
-                sql = "INSERT INTO Peliculas(titulo, Autor, Sinopsis, Duración, Clasificación) VALUES(" +
+                sql = "INSERT INTO Peliculas(Titulo, Autor, Sinopsis, Duracion, Clasificacion) VALUES(" +
                     "'" + Peliculas[2] + "'," +
                     "'" + Peliculas[3] + "'," +
                     "'" + Peliculas[4] + "'," +
@@ -42,15 +42,15 @@ namespace ISNP001724_Bloque2
             else if (Peliculas[0] == "Modificar")
             {
                 sql = "UPDATE Peliculas SET Titulo='" + Peliculas[2] + "', Autor='" + Peliculas[3] + "', " +
-                    "Sinopsis='" + Peliculas[4] + "', Duración='" + Peliculas[5] + "', Clasificación='" + Peliculas[6] + "' WHERE id =" + Peliculas[1];
+                    "Sinopsis='" + Peliculas[4] + "', Duracion='" + Peliculas[5] + "', Clasificacion='" + Peliculas[6] + "' WHERE id =" + Peliculas[1];
 
             }
             else if (Peliculas[0] == "Eliminar")
-{
-    sql = "DELETE FROM Peliculas WHERE id ='" + Peliculas[1] + "'";
-}
-return ejecutarSQL(sql);
-        }
+            {
+            sql = "DELETE FROM Peliculas WHERE id ='" + Peliculas[1] + "'";
+            }
+            return ejecutarSQL(sql);
+            }
                 private string ejecutarSQL(string sql)
         {
             try
