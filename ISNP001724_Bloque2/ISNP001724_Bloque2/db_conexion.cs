@@ -14,7 +14,7 @@ namespace ISNP001724_Bloque2
         SqlCommand miComando = new SqlCommand();
         SqlDataAdapter miAdaptador = new SqlDataAdapter();
         DataSet ds = new DataSet();
-
+         
         public db_conexion()
         {
             miConexion.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\peliculas.mdf;Integrated Security=True";
